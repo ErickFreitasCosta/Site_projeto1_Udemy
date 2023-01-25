@@ -1,0 +1,103 @@
+body{
+    font-family: arial,sans-serif;
+    background-color: #ccc;
+    margin: 0;
+    margin-bottom: 0;
+}
+.hero{
+    background-image: url(../imagens/bg-3.jpg);
+    height: 500px;
+    background-position: right center;
+    background-size: cover; /* Para sempre ocupar todo espaço da página*/
+    border: solid 2px transparent;
+}
+.hero-content{
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+}
+.hero-content h1{   /* Formata todos os h1 que estiverem dentro da class hero-content*/ /* h1 que é descendente de hero-content*/
+    font-size: 50px;  /* Tamanho da letra*/
+    text-transform: uppercase;
+    text-shadow: 3px 4px 3px #333; /*3 pixels para a direita,3 pixels para a esquerda , 4pixels de esfumaçamento da cor vermelha*/
+}
+.hero-content p{
+    background-color: rgba(94, 90, 90, 0.8);
+    display: inline-block;  /* reduz o tamanho do bloco e deixa como lado a lado*/
+    padding: 10px;
+    border-bottom: solid 1px white;
+}
+.hero nav ul{
+    text-align: right;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.hero nav li{
+    display: inline-block;
+    list-style: none;  
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+.hero nav a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgba(133, 129, 129, 0.2); /* O último parâmetro vai de 0 a 1 e a transparência*/
+    color: white;
+    padding: 20px;
+    letter-spacing: 2px;
+    border-radius: 30px;
+}
+.hero nav a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+main{
+    width: 80%;
+    margin: auto;   /* Centraliza automáticamente*/
+}
+.content-section{
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+    overflow: auto; /* Vai encaixar a div no card*/
+}
+.card{
+    float: left; /* Deixa tudo flutuando na mesma linha*/
+    width: 32%;
+    
+    box-sizing: border-box;  /* Serve para quandor for somar ,somar apenas o conteúdo já existente e não vai adicionar mais nada*/
+}
+.card img{
+    width: 100%;  /* A imagem vai se encaixar na nossa div*/
+    display: block;
+}
+.card1, .card2{
+    margin-right: 2%;
+}
+#content-header{
+    border-bottom: solid 4px rgb(122, 120, 120);
+    background-color: rgb(219, 216, 216);
+    padding-top:3px ;
+    border-radius: 30px; /* Arredonda o botão*/
+}
+
+.rodape{
+    
+    background-color: rgb(158, 151, 151);
+    text-align: center;
+    font-size: small;
+    padding-bottom: 15px;
+    padding-top: 8px;
+}
+.card{
+    display: inline-block;  /* Deixa tudo em bloco ,mas em linha*/
+    text-align: center;
+    justify-content: space-between;
+    
+}
+.card p{
+    background-color: #393535;
+    color: white;
+    margin: 0;    /* Tirei os espaços*/
+    padding: 20px;
+    letter-spacing: 1px;
+}
